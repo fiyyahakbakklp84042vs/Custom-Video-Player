@@ -1,40 +1,28 @@
 <html>
-    <head>
-        <link href="Main.css" rel="stylesheet"/>
-        <script src="jquery-1.10.2.min.js"></script>
-    </head>
-    <body>
-        <div id="frame"></div>
-        
-        <div id="main">
-            <div id="videoPanel">
-                <video id="myVideo" width="625" height="400" src="DAFT%20MUSIC.mp4"></video>
-            </div>    
-            
-            <div id="controls">
-                <div id="seek-bar">
-                    <div id="fill"></div>
-                </div>
-                
-                <table border="0">
-                    <tr>
-                        <td width="55%">
-                            <div id="currentTime">00:00 / 00:00</div>
-                        </td>
-                        <td width="30%">
-                            <img src="Play.png" onclick="playOrPause()" id="playBtn"/>
-                        </td>
-                        <td>
-                            <img src="Speaker.png" id="speaker"/>
-                        </td>
-                        <td>
-                            <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()"/>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        
-    </body>
-    <script src="JavaScript%20Main.js"></script>
-</html>
+    <div class="frame"></div>
+<div class="main">
+	<div id="videoPanel">
+		<video src="9 WAR OF UNITY.mp4" id="myVideo" width="625" height="400" poster="vlcsnap-2020-03-17-17h52m24s394.png"></video>
+	</div>
+	<div class="controls">
+		<div class="seek-bar">
+			<div id="fill"></div>
+			<div class="handle"></div>
+		</div>
+		<table border="0">
+			<tr>
+				<td width="40%"><div id="currentTime">00:00 / 00:00</div></td>
+				<td><img src="Pre.png" onclick="previous()"></td>
+				<td><img src="Custom-Video-Player-master/play.png" alt="" id="playBtn" onclick="playOrPause()"></td>
+				<td><img src="Next.png" onclick="next()"></td>
+				<td><img src="Custom-Video-Player-master/Speaker.png" alt="" id="speaker"></td>
+				<td><input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" onchange="changeVolume()"></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<h2 id="title">Demo</h2>
+<p>Inspiration from Youtube's account <a href="https://www.youtube.com/watch?v=UYR9MQDXphk">The Coder - Making a Music Player with CSS and JavaScript.
+</a></p>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="videopn.js"></script>
