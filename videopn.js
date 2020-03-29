@@ -58,7 +58,6 @@ function previous(){
 	charge();
 }
 function charge(){
-	title = document.getElementById("title");
 	switch(s){
 		case 1:
 		vid.src = "9 WAR OF UNITY.mp4";
